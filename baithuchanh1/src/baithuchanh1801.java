@@ -23,6 +23,7 @@ public class baithuchanh1801 {
                 x2=(-heSoB-Math.sqrt(delta))/(2*heSoA);
                 System.out.println("nghiem X1 la: "+x1);
                 System.out.println("nghiem X2 la: "+x2);
+                sc.close();
             }
         
     }
