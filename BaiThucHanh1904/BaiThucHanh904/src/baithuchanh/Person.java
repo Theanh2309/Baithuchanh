@@ -1,33 +1,45 @@
 package baithuchanh;
 
+
 import java.util.Scanner;
+
 public class Person {
-    public String PersonID;
-    public String PersonName;
-    public String Address;
-    Scanner sc = new Scanner(System.in);
+    public String ten;
+    public String soDienThoai;
+    public String diaChi;
+    public String gioiTinh;
 
-    public Person(){}
+    public Person(){
 
-    public void nhapPersonID(){
-        System.out.println("Hay nhap ID: ");
-        Scanner sc = new Scanner(System.in);
-        PersonID = sc.nextLine();
-        sc.close();
     }
 
-    public void nhapPersonName() {
-       System.out.println("nhap ten: ");
+    public void nhapSoDienThoai(){
+        System.out.println("Nhap so dien thoai: ");
         Scanner sc = new Scanner(System.in);
-        PersonName = sc.nextLine();
-        sc.close();
+        soDienThoai = sc.nextLine();
     }
-    
-    public void nhapAddress() {
-        System.out.println("Hay nhap Dia chi: ");
+
+    public void inSoDienThoai(){
+        System.out.println("So dien thoai: " + soDienThoai);
+    }
+
+    public void nhapTen(){
+        System.out.println("Nhap ten: ");
         Scanner sc = new Scanner(System.in);
-        Address = sc.nextLine();
-        sc.close();
+        ten = sc.nextLine();
+    }
+
+    public void inTen(){
+        System.out.println("Ten: " + ten);
+    }
+
+    public void nhapDiaChi(){
+        System.out.println("Nhap dia chi: ");
+        Scanner sc = new Scanner(System.in);
+        diaChi = sc.nextLine();
+    }
+
+    public void inDiaChi(){
+        System.out.println("Dia chi: " + diaChi);
     }
 }
-

@@ -1,28 +1,21 @@
 package baithuchanh;
 
-public class Student extends Person {
+import java.util.Scanner;
 
-        private String dob;
-        private String gender;
-        
-            public Student( String masinhvien, String ten, String ngaysinh, String gioitinh,  String diachi){
-                this.dob=ngaysinh;
-                this.PersonID=masinhvien;
-                this.Address=diachi;
-                this.PersonName=ten;
-                this.gender=gioitinh;
-            }
+public class Student extends Person{
+    public String maHocSinh;
 
-            public Student(){}
-        
-            public void getdob(){
-                System.out.println("ngay sinh la: "+ dob);
-            }
+    public Student(){
 
-            public void getgender(){
-                System.out.println("gioi tinh la: "+ gender);
-            }
-        
-        }
-        
+    }
+    
+    public void nhapMaHocSinh(){
+        System.out.println("Nhap ma hoc sinh: ");
+        Scanner sc = new Scanner(System.in);
+        maHocSinh = sc.nextLine();
+    }
 
+    public void inMaHocSinh(){
+        System.out.println("Ma hoc sinh: " + maHocSinh);
+    }
+}

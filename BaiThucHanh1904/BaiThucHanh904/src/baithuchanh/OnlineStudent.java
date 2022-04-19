@@ -1,7 +1,22 @@
 package baithuchanh;
 
-public class OnlineStudent extends Student {
-    public void chuyencan(String name){
-        System.out.println("Hoc sinh" +name+"dang hoc trong lop");
+
+import java.util.Scanner;
+
+public class OnlineStudent extends Student{
+    public int diemThiOn;
+
+    public OnlineStudent(){
+
+    }
+    
+    public void nhapDiemThi(){
+        System.out.println("Nhap diem thi: ");
+        Scanner sc = new Scanner(System.in);
+        diemThiOn = sc.nextInt();
+    }
+
+    public void inDiemThi(){
+        System.out.println("Diem thi: " + diemThiOn);
     }
 }

@@ -1,33 +1,25 @@
 package baithuchanh;
 import java.util.Scanner;
 public class Employee extends Person{
-    int songaylamviec;
-    Scanner sc = new Scanner(System.in);
-    public Employee(){}
+    public long luong;
 
-    public void settennhanvien(){
-        System.out.println("nhap ten nhan vien: ");
-        PersonName= sc.nextLine();
+    public static final long LUONG_NHAN_VIEN_FULL_TIME_MOT_THANG = 5000000;
+    public static final long LUONG_NHAN_VIEN_PART_TIME_MOT_NGAY = 200000;
+    public static final long LUONG_LAM_THEM_MOT_NGAY = 300000;
+    public static final long LUONG_LAM_THEM_MOT_GIO = 50000;
+    public Employee(){
+
     }
 
-    public void gettennhanvien(){
-        System.out.println( "ten nhan vien la: "+PersonName);
+    public void inThongTin(){
+        inTen();
+        inSoDienThoai();
+        inDiaChi();
+        System.out.println("Luong: " + luong);
     }
 
-    public  void setgdanhso(){
-        System.out.println("nhap danh so nhan vien");
-        PersonID=sc.nextLine();
+    public String loaiNhanVien(){
+        return "";
     }
-
-    public void getdanhso(){
-        System.out.println( "nhan vien mang danh so: "+PersonID);
-    }
-
-
-
-
-
-    
-    
 
 }
