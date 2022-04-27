@@ -42,6 +42,7 @@ public class Triangle extends Point {
         System.out.println(AB);
         System.out.println(BC);
         System.out.println(AC);
+        
         if(ax==bx && ay==by|| bx ==cx && by==cy || cx == ax && cy == ay){
             System.out.println("day khong phai tam giac vi co diem trung nhau");
         }else if(AB==BC||AB==AC||AC==BC){

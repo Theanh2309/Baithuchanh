@@ -5,8 +5,10 @@ import java.util.Scanner;
 //  Nếu có thì là tứ giác loại gì và in thông tin ra màn hình?
 public class Quadrilateral extends Point{
     
-Quadrilateral(){}
+public Quadrilateral(){}
     Scanner sc = new Scanner(System.in );
+
+    
 
     // chong ham 
     public void check(){
